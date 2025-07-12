@@ -6,7 +6,7 @@ WORKDIR /app
 COPY package*.json ./
 COPY tsconfig.json ./
 COPY src/ ./src/
-
+copy .env .
 RUN --mount=type=cache,target=/root/.npm npm install
 
 RUN npm run build
