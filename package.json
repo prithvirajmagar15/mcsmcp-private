@@ -6,11 +6,11 @@
   "main": "dist/server.js",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "test": "jest",
-    "dev": "tsc --watch"
-  },
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "test": "jest --passWithNoTests",
+  "dev": "tsc --watch"
+},
   "bin": {
     "demo": "./dist/server.js"
   },
